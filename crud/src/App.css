@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color: #131516;
+  display: flex;
+}
+a{
+  transition: all 0.5s;
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+.home{
+  font-size: 1.3rem;
+}
+.home a:hover{
+  color: #0096FF;
+}
+
+.navbar{
+  
+  display: inline-flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+}
+.navbar a:hover{
+  color: white;
+  background-color: #0096FF;
+  
+}
+.navbar a{
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+}
+.links{
+  display: inline;
+  
+}
+.links a:hover{
+  background-color: #0096FF;
+}
+
+.homeImg{
+  height: 830px;
+  width: 100%;
+}
+.homeImage{
+  display: flexbox;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-image: url("http://www.brooklyn.cuny.edu/web/off_dosa/BCGRAD2020-Library-06_1920x1080.jpg");
+  height: 95vh;
+  width: 219vh;
+}
+.title{
+  position: absolute;
+  top: 350px;
+  left: 750px;
+  color: white;
+  text-shadow: black 10px;
+  
+
+}
+.center{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 100%;
+padding: 0 20px;
+width: 100%;
+}
+.picture {
+  display: flex;
+background-repeat: no-repeat;
+background-position: 50%;
+height: 50vh;
+background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_513881682_2000124120009280226_343051.jpg");
+}
+
+
