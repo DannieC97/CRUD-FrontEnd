@@ -1,15 +1,15 @@
+import { useNavigate } from "react-router-dom"
+export default function Students() {
+    let navigate = useNavigate();
 
-export default function Students(){
-    return(
+    return (
         <div className="container">
-            
             <div className="picture">
-            
                 <div className="center">
-                <h1>Students</h1>
+                    <h1 className="studTitle">Students</h1>
                 </div>
             </div>
-            <button className="addStud">Add Student</button>
+            <button className="addStud" onClick={() => { navigate("/createstudent") }}>Add Student</button>
         </div>
     )
 }

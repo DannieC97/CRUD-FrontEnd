@@ -1,15 +1,13 @@
 html{
   margin: 0;
   background-color: #131516;
-  
 }
 .App {
   text-align: center;
   margin: 0;
+  color: white;
 }
-
-
-a{
+a:hover{
   transition: all 0.5s;
   text-decoration: none;
 }
@@ -17,23 +15,15 @@ a:visited{
   text-decoration: none;
   color: white;
 }
-.home{
+.home:hover {
   font-size: 1.3rem;
+  color: white;
+  background-color: #0096FF;
 }
-.home a:hover{
-  color: #0096FF;
-}
-
 .navbar{
-  
   display: inline-flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.3rem;
-}
-.navbar a:hover{
-  color: white;
-  background-color: #ff4800;
-  
 }
 .navbar a{
   display: inline-block;
@@ -44,12 +34,7 @@ a:visited{
 }
 .links{
   display: inline;
-  
 }
-.links a:hover{
-  background-color: #0096FF;
-}
-
 .homeImg{
   height: 830px;
   width: 100%;
@@ -58,7 +43,6 @@ a:visited{
   display: flexbox;
   background-position: center center;
   background-repeat: no-repeat;
-  
   background-image: url("http://www.brooklyn.cuny.edu/web/off_dosa/BCGRAD2020-Library-06_1920x1080.jpg");
   height: 95vh;
   width: 219vh;
@@ -66,48 +50,102 @@ a:visited{
 .title{
   position: absolute;
   top: 350px;
-  left: 750px;
+  left: 530px;
   color: white;
-  text-shadow: black 10px;
-  
-
+  text-shadow: 4px 3px black;
+  font-size: 2rem;
+  opacity: 80%;
 }
 .center{
   display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-height: 100%;
-padding: 0 20px;
-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+  width: 100%;
 }
-
 .picture {
   background-image: url("https://www.centerlw.org/wp-content/uploads/2019/04/Graduation.jpg");
   display: flex;
   background-repeat: no-repeat;
   background-position: center -400px;
-  
   height:60vh;
-
-  
+}
+.campusPicture{
+  background-image: url("http://www.brooklyn.cuny.edu/web/off_dosa/BCGRAD2020-Evening-01_1920x1080.jpg");
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center -400px;
+  height:60vh;
 }
 .center{
   display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-height: 100%;
-padding: 0 20px;
-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+  width: 100%;
 }
 .addStud{
   padding: 10px 10px;
   font-size: 1.4rem;
   width: 10%;
+  margin-top: 25px;
+  border-radius: 6px;
+  background-color: #0096FF;
+  color: white;
+  border: black solid 2px;
 }
+.studTitle{
+  text-shadow: 4px 3px black;
+  font-size: 3rem;
+}
+.campTitle{
+  text-shadow: 4px 3px black;
+  font-size: 3rem;
+  opacity: 85%;
+}
+form{
+  display: table;
+  margin: auto;
+  margin-top: 100px;
+  background-color: grey;
+  padding: 35px 40px 40px 40px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+label{
+  display: table-cell;
+  padding: 3px;
+}
+input{
+  display: table-cell;
+  padding: 3px;
+  border-radius: 10px;
+  border-color: black;
+  height: 17px;
+}
+.submitBtn{
+  margin-top: 30px;
+  width: 60%;
+  height: 60%;
+  font-size: 1.2rem;
+  background-color: #0096FF;
+  color: white;
+}
+.campBtn{
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  background-color: white;
+  border: black solid 2px;
+}
+
+
 
 
 
