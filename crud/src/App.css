@@ -32,8 +32,9 @@ a:visited{
   padding: 10px 10px;
   color: white;
 }
-.links{
+.links a:hover{
   display: inline;
+  background-color: #0096FF;
 }
 .homeImg{
   height: 830px;
