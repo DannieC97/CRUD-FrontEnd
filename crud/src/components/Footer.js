@@ -1,8 +1,8 @@
 import "../App.css"
 import { Link } from "react-router-dom"
-export default function Navbar() {
+export default function Footer() {
     return (
-        <div className="navbar">
+        <div className="footer">
             <div className="home">
                 <Link to="/">Home</Link>
                 
