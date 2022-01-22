@@ -1,7 +1,7 @@
-export default function CreateCampus(){
-    return(
+export default function CreateCampus() {
+    return (
         <div>
-              <form className="myForm">
+            <form className="myForm">
                 <div>
                     <label>Campus Name: </label>
                     <input type="text" name="first"></input>
@@ -15,11 +15,11 @@ export default function CreateCampus(){
                     <input type="text" name="email"></input>
                 </div>
                 <div>
-                    <input className="submitBtn" type="submit" value= "Submit"></input>
+                    <input className="submitBtn" type="submit" value="Submit"></input>
                 </div>
-                
-                
-                
+
+
+
 
             </form>
         </div>
