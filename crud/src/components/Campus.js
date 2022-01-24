@@ -4,9 +4,12 @@ import React from "react";
 
 export default function Campus({props}){
     return (
-        <ul style={{backgroundColor: 'aquamarine', width: '100px', padding : '10px', marginLeft: '10px'}}>
-            <li>{props.name}</li>
+        <ul className="element">
+            <li className="el-name">{props.name}</li>
+            <li ><img src="http://www.brooklyn.cuny.edu/web/off_dosa/BCGRAD2020-Evening-01_1920x1080.jpg" alt="campus building" className="el-img"/></li>
             <li>{props.description}</li>
+            <li>Address: {props.address}</li>
+
         </ul>
     )
 }

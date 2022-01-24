@@ -63,6 +63,24 @@ h3{
   font-size: 2rem;
   opacity: 80%;
 }
+.element{
+  padding: 6px;
+  border: 2px solid peru;
+  border-radius: 10px;
+  background-color: plum;
+  color: black;
+  width: 200px;
+  margin: 10px;
+
+}
+.el-name{
+  font-weight: bold;
+  font-style: italic;
+}
+.el-img{
+  height:80px;
+  width: 100px;
+}
 .center{
   display: flex;
   flex-direction: column;
@@ -115,6 +133,9 @@ h3{
   text-shadow: 4px 3px black;
   font-size: 3rem;
   opacity: 85%;
+}
+.campus-lst{
+  display: flex;
 }
 form{
   display: table;
