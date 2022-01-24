@@ -10,9 +10,9 @@ export default function Campuses(props) {
         const allCampuses = await Axios.get(`http://localhost:3300/api/campuses`)
         setCampuses((allCampuses.data))
     }
-    useEffect(() => {
-        getCampuses();
-    }, [])
+    // useEffect(() => {
+    //     getCampuses();
+    // }, [])
     return (
         <div className="container">
             <div className="campusPicture">

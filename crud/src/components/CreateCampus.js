@@ -1,41 +1,54 @@
 import { useState } from "react";
 import Axios from "axios"
-export default function CreateCampus() {
-    
-    const [firstname, setFirstname] = useState("")
-    const [lastName, setLastName]   = useState("")
-    const [email, setEmail]       = useState("")
-    const [imageURL, setImageURL]  = useState("https://www.phoenix.gov/econdevsite/MediaAssets/ASU%20Day%20Photo.jpg")
-    const [gpa, setGPA] = useState(1)
+import { useNavigate } from "react-router-dom";
+export default function CreateCampus(props){
+
+    const [name, setName] = useState("")
+    const [imgURL, setImgURL]   = useState("")
+    const [address, setAddress]       = useState("")
+    const [description, setDescription]  = useState("https://www.phoenix.gov/econdevsite/MediaAssets/ASU%20Day%20Photo.jpg")
+    let navigate = useNavigate();
     async function submitHandler(e){
         e.preventDefault()
-        await Axios.post(`http://localhost:3300/api/students`, {firstname, lastName, email, imageURL, gpa})
+        let newName = document.querySelector('.c-name').value
+        let newImg = "http://www.brooklyn.cuny.edu/web/off_dosa/BCGRAD2020-Evening-01_1920x1080.jpg"
+        let newAdd = document.querySelector('.c-address').value
+        let newDesc = document.querySelector('.c-description').value
+        setName(newName)
+        setImgURL(newImg)
+        setAddress(newAdd)
+        setDescription(newDesc)
+        let newCampus =  {name: newName, imgURL:newImg, address:newAdd, description:newDesc, dateCreated: Date(), dateUpdated: Date() }
+        props.setDummyCampuses([...props.dummyCampuses, newCampus ])
+        console.log(props.dummyCampuses)
+        //this line should be after post but to make it work for now: 
+        navigate("/campuses")
+        await Axios.post(`http://localhost:3300/api/campuses`, {name: name, imgURL:imgURL, address:address, description:description, dateCreated: Date(), dateUpdated: Date()})
         console.log('did something')
+
+
     }
 
     return (
         <div>
-            <form className="myForm" onSubmit={submitHandler}>
+          
                 <div>
                     <label>Campus Name: </label>
-                    <input type="text" name="first"></input>
+                    <input type="text" className="c-name"></input>
                 </div>
                 <div>
                     <label>Address: </label>
-                    <input type="text" name="last"></input>
+                    <input type="text" className="c-address"></input>
                 </div>
                 <div>
                     <label>Description: </label>
-                    <input type="text" name="email"></input>
+                    <input type="text" className="c-description"></input>
                 </div>
                 <div>
-                    <input className="submitBtn" type="submit" value="Submit" ></input>
+                    <button className="submitBtn" onClick={submitHandler}>Add Campus</button>
+               
                 </div>
 
+        </div> 
+        )}
 
-
-
-            </form>
-        </div>
-    )
-}

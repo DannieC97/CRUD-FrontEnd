@@ -22,7 +22,7 @@ function App() {
           <Route path="/students" element={<Students />} />
           <Route path="/campuses" element={<Campuses dummyCampuses={dummyCampuses} setDummyCampuses={setDummyCampuses}/>} />
           <Route path="/createstudent" element={<CreateStudent />} />
-          <Route path="/createcampus" element={<CreateCampus />} />
+          <Route path="/createcampus" element={<CreateCampus  dummyCampuses={dummyCampuses} setDummyCampuses={setDummyCampuses}/>} />
           {/* as the comment in SingleCampus explains, the below
           line would be better as a function that created a Route for 
           every campus in the campus state, it's the same for the individual student 

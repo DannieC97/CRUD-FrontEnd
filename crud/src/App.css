@@ -136,6 +136,7 @@ h3{
 }
 .campus-lst{
   display: flex;
+  flex-wrap: wrap;
 }
 form{
   display: table;
